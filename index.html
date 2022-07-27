@@ -30,7 +30,7 @@
                     </div>
                     <div>
                         <a href="#">Home</a>
-                        <a href="#">About</a>
+                        <a href="#About">About</a>
                         <a href="#">Services</a>
                         <a href="#">Pages</a>
                         <a href="#">Blog</a>
@@ -54,14 +54,16 @@
                     Praesent vel hendrerit felis. Sed pulvinar neque eu nulla faucibus accumsan. 
                     </p>
                     <div>
-                        <button class="btn btn-secondary">DOWNLOAD CV</button>
+                        <a href="data/resume.txt" download="resume.txt">
+                            <button class="btn btn-secondary">DOWNLOAD CV</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="about">
+    <section id="#About" class="about">
         <div class="container flex items-center">
             <div class="flex-1">
                 <img class="about-me-img" src="./images/man-2.png" alt="">
@@ -93,7 +95,7 @@
     <section class="services">
         <div class="container">
             <h1 class="section-heading"><span>My</span> Services</h1>
-            <p>I provide high quality and efficient solutions for your problems.</p>
+            <p>I provide high quality and efficient solutions for your requirements.</p>
         
             <div class="card-wrapper">
                 <div class="card">
@@ -158,6 +160,65 @@
             </div>
         </div>
     </section>
+    <section class="freelancer">
+        <h1>I am available for Freelancing.</h1>
+        <p>I provide high quality and efficient solutions for your requirements.</p>
+        <a href="data/resume.txt" download="resume.txt">
+            <button class="btn btn-primary">Download CV</button>
+        </a>   
+    </section>
+    <section class="contact">
+        <div class="container">
+            <h1 class="section-heading">Contact<span> Me</span></h1>
+            <p>Reach out to me on these platforms:</p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="./images/smartphone.png" height="45px">
+                    <h1>Call Me On:</h1>
+                    <h6>+91 91919 19191</h6>
+                </div>
+
+                <div class="card">
+                    <img src="./images/email2.png" height="45px">
+                    <h1>Email Me At:</h1>
+                    <h6>udayanchavan24@gmail.com</h6>
+                </div>
+
+                <div class="card">
+                    <img src="./images/instagram3.png" height="45px">
+                    <h1>DM Me At:</h1>
+                    <h6>@Udayan_24</h6>
+                </div>
+            </div>
+
+            <form action="">
+                <div class="input-wrap">
+                    <input type="text" placeholder="Name*">
+                    <input type="email" placeholder="Email*">
+                </div>
+                <div class="input-wrap-2">
+                    <input type="text" placeholder="Subject">
+                    <textarea cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <img src="./images/logoU.png" alt="">
+        <div class="footer-socials">
+            <button class="btn2 btn-secondary2 fa fa-envelope"></button>
+            <button class="btn2 btn-secondary2 fa fa-linkedin"></button>
+            <button class="btn2 btn-secondary2 fa fa-github"></button>
+            <button class="btn2 btn-secondary2 fa fa-instagram"></button>
+            <button class="btn2 btn-secondary2 fa fa-facebook" style="padding: 0.3rem 0.5rem;"></button>
+        </div>
+        <div>
+            <p>©Copyright 2022. All rights reserved.</p> 
+        </div>
+    </footer>
 </body>
 
 </html>
