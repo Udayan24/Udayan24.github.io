@@ -12,6 +12,13 @@
 body{
     font-family: 'Poppins', sans-serif;
     height: 3800px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 *{
@@ -43,6 +50,10 @@ header nav .left a{
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
+}
+
+section{
+    width:100%;
 }
 
 header nav .left a:hover{
@@ -97,6 +108,7 @@ header nav .branding{
 
 section{
     padding:6rem 0;
+    width: 100%;
 }
 
 section.about .about-me-img{
@@ -333,4 +345,202 @@ footer p{
     color: var(--ternary);
     font-size: 12px;
     margin-bottom: 0.5rem;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
+.site-main-wrapper{
+    position: relative;
+}
+
+.hamburger{
+    position: absolute;
+    top:40px;
+    right:40px;
+    z-index: 11;
+    background: none;
+    border:none;
+    outline: none;
+    cursor:pointer;
+    display: none;
+}
+
+.hamburger img{
+    width:30px;
+}
+
+.mobile-nav{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 1001;
+    background: var(--light);
+    width: 100%;
+    height: 100%;
+    padding:2rem;
+    padding-top:5rem;
+    transform: translateX(-100%);
+
+    transition: all .5s ease-in-out;
+}
+
+.open{
+    transform: translateX(0%);
+}
+
+.times{
+    position:fixed;
+    top:30px;
+    right:30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.times img{
+    width: 30px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+}
+
+.mobile-nav ul li a{
+    color:var(--secondary);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1024px){
+    header #main-nav{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hero .left img{
+        width:260px;
+    }
+
+    .hero .right h1{
+        font-size:3rem;
+    }
+
+    .hero{
+        padding-top:15rem;
+    }
+
+    header{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 27% 92%, 0 100%);
+        padding-bottom:2rem;
+    }
+
+    section.about .about-me-img {
+        height: 360px;
+    }
+
+    section.services .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.freelancer {
+        padding-bottom: 10rem;
+    }
+}
+
+@media (max-width:576px){
+    .hero{
+        flex-direction: column;
+        padding-top:5rem;
+    }
+
+    header{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 72% 95%, 0 100%);
+        padding-bottom:10rem;
+    }
+
+    .hero .right{
+        position: absolute;
+        top:260px;
+        padding: 0 1rem;
+        margin-top: -9rem;
+    }
+
+    .hero .left img{
+        opacity: 20%;
+    }
+
+    .hero .left{
+        margin-right:-6rem;
+    }
+
+    .about-inner-wrap{
+        flex-direction: column;
+        margin-top:-0.5rem;
+    }
+
+    .about .right{
+        text-align: center;
+        margin-top:2rem;
+    }
+
+    .about .right .social{
+        justify-content: center;
+    }
+
+    section {
+        padding: 3rem 0;
+        width: 100%;
+    }
+
+    section.services .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    section.freelancer{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 72% 90%, 0 100%);
+        padding-bottom: 6rem;
+    }
+
+    section.contact .card-wrapper {
+        grid-template-columns: repeat(1,1fr);
+        margin-top:-5rem;
+        margin-bottom:2rem;
+    }
+
+    section.contact .input-wrap{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap:1rem;
+    }
+
+    section.contact .send-message {
+        width: 100%;
+        color:var(--pure);
+        font-weight: 530;
+    }
 }
