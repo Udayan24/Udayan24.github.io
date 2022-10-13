@@ -41,7 +41,7 @@
                 <nav id="main-nav" class="flex items-center justify-between">
                     <div class="left flex items-center">
                         <div class="branding">
-                            <img src="./images/logoU.png" alt="">
+                            <img src="./images/logoU2.png" alt="">
                         </div>
                         <div>
                             <a href="#">Home</a>
@@ -56,20 +56,16 @@
                     </div>
                 </nav>
                 <div class="hero flex items-center justify-between">
-                    <!--<div class="left flex-1 flex justify-center">
-                        <img src="./images/man.png" alt="">
-                    </div> -->
-                    <div class="right flex-1" style="margin-top: 1rem; margin-bottom: 3rem;">
+                    <div class="right flex-1" style="margin-top: 1rem; margin-bottom: 10rem;">
                         <h6>Udayan Chavan</h6>
-                        <h1>I'm a Web <span>Developer</span></h1>
-                        <p class="backg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Pellentesque pulvinar quis sem scelerisque gravida. Cras sem ipsum, 
-                        pulvinar ac ex eu, lobortis porta nisl. Praesent fermentum dapibus 
-                        orci, quis pretium mauris efficitur ac. Pellentesque sed aliquet nisl. 
-                        Praesent vel hendrerit felis. Sed pulvinar neque eu nulla faucibus accumsan. 
+                        <h1>I'm a Web <span>Developer</span> & 3D <span>Artist</span></h1>
+                        <p class="backg">I am a Computer Science student passionate about Technology, Design and the combination of both.<br>
+                            Your problems can be solved in the most efficient way using latest tools and technology
+                            within the shortest deadlines in an affordable price.<br>
+                            Look forward to working with you.
                         </p>
                         <div>
-                            <a href="data/resume.txt" download="resume.txt">
+                            <a href="data/Udayan_Resume.pdf" download="Udayan_Resume.pdf">
                                 <button class="btn btn-secondary">DOWNLOAD CV</button>
                             </a>
                         </div>
@@ -98,11 +94,21 @@
                     </p>
                     
                     <div class="social" style="justify-content: center; margin-top: 3rem;">
-                        <button class="btn2 btn-secondary2 fa fa-envelope"></button>
-                        <button class="btn2 btn-secondary2 fa fa-linkedin"></button>
-                        <button class="btn2 btn-secondary2 fa fa-github"></button>
-                        <button class="btn2 btn-secondary2 fa fa-instagram"></button>
-                        <button class="btn2 btn-secondary2 fa fa-facebook"></button>
+                        <a href="mailto:udayanchavan24@gmail.com" target="_blank">
+                            <button class="btn2 btn-secondary2 fa fa-envelope"></button>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/udayan-c-16866b19b/" target="_blank">
+                            <button class="btn2 btn-secondary2 fa fa-linkedin"></button>
+                        </a>
+                        
+                        <a href="https://github.com/Udayan24" target="_blank">
+                            <button class="btn2 btn-secondary2 fa fa-github"></button>
+                        </a>
+                        
+                        <a href="https://www.instagram.com/udayan_24/" target="_blank">
+                            <button class="btn2 btn-secondary2 fa fa-instagram"></button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -178,7 +184,7 @@
         <section class="freelancer">
             <h1>I am available for Freelancing.</h1>
             <p>I provide high quality and efficient solutions for your requirements.</p>
-            <a href="data/resume.txt" download="resume.txt">
+            <a href="data/Udayan_Resume.pdf" download="Udayan_Resume.pdf">
                 <button class="btn btn-primary">Download CV</button>
             </a>   
         </section>
@@ -205,30 +211,47 @@
                         <h6>@Udayan_24</h6>
                     </div>
                 </div>
-    
-                <form action="">
-                    <div class="input-wrap">
-                        <input type="text" placeholder="Name*">
-                        <input type="email" placeholder="Email*">
+
+                <div class="fcf-body">
+
+                    <div id="fcf-form">
+                
+                        <form id="fcf-form-id" class="fcf-form-class" method="post" action="">
+
+                            <div class="input-wrap">
+                                <input type="text" id="Name" name="Name" placeholder="Name" class="fcf-form-control" required>
+                                <input type="email" id="Email" name="Email" placeholder="Email" class="fcf-form-control" required>
+                            </div>
+                            
+                            <div class="input-wrap-2">
+                                <textarea id="Message" placeholder="Message" name="Message" class="fcf-form-control" cols="30" rows="10" required></textarea>
+                            </div>
+
+                            <div class="btn-wrapper">
+                                <button type="submit" id="fcf-button" class="btn btn-primary send-message">Send Message</button>
+                            </div>                
+                        </form>
                     </div>
-                    <div class="input-wrap-2">
-                        <input type="text" placeholder="Subject">
-                        <textarea cols="30" rows="10" placeholder="Message"></textarea>
-                    </div>
-                    <div class="btn-wrapper">
-                        <button class="btn btn-primary send-message">Send Message</button>
-                    </div>
-                </form>
+                
+                </div>
+                
             </div>
         </section>
         <footer>
             <img src="./images/logoU.png" alt="">
             <div class="footer-socials">
-                <button class="btn2 btn-secondary2 fa fa-envelope"></button>
-                <button class="btn2 btn-secondary2 fa fa-linkedin"></button>
-                <button class="btn2 btn-secondary2 fa fa-github"></button>
-                <button class="btn2 btn-secondary2 fa fa-instagram"></button>
-                <button class="btn2 btn-secondary2 fa fa-facebook" style="padding: 0.3rem 0.5rem;"></button>
+                <a href="mailto:udayanchavan24@gmail.com" target="_blank" style="text-decoration: none;">
+                    <button class="btn2 btn-secondary2 fa fa-envelope"></button>
+                </a>
+                <a href="https://www.linkedin.com/in/udayan-c-16866b19b/" target="_blank" style="text-decoration: none;">
+                    <button class="btn2 btn-secondary2 fa fa-linkedin"></button>
+                </a>
+                <a href="https://github.com/Udayan24" target="_blank" style="text-decoration: none;">
+                    <button class="btn2 btn-secondary2 fa fa-github"></button>
+                </a>
+                <a href="https://www.instagram.com/udayan_24/" target="_blank" style="text-decoration: none;">
+                    <button class="btn2 btn-secondary2 fa fa-instagram"></button>
+                </a>
             </div>
             <div>
                 <p>©Copyright 2022. All rights reserved.</p> 
