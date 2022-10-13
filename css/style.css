@@ -69,6 +69,10 @@ header nav .branding{
 }
 
 .hero{
+    background-image: url("./images/tech2.gif");
+}
+
+.hero{
     padding:3rem 0;
 }
 
@@ -543,4 +547,8 @@ footer p{
         color:var(--pure);
         font-weight: 530;
     }
+}
+
+.backg {
+    background-image: url("./images/tech2.gif");
 }
