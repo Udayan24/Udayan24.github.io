@@ -17,7 +17,7 @@
 .btn{
     padding: 0.8rem 3rem;
     font-size:1rem;
-    font-weight:600;
+    font-weight:550;
     border:2px solid transparent;
     outline:none;
 
@@ -42,7 +42,18 @@
     color:var(--dark);
 }
 
+.btn-primary2{
+    background:var(--primary);
+    color:var(--pure);
+}
+
 .btn-primary:hover{
+    background:transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-primary2:hover{
     background:transparent;
     border-color: var(--primary);
     color: var(--primary);
